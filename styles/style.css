@@ -1,0 +1,268 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Zain', serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+h1 {
+    font-family: 'Akaya Kanadaka', serif;
+    font-size: 250%;
+}
+
+/* NAVIGATION */
+.navbar {
+    background: #008080;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 70px;
+    background: url('../images/hero.jpg') center/cover no-repeat;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* WHY VISIT SECTION WITH IMAGE */
+.container {
+    display: flex;
+    align-items: flex-start; /* Aligns the top of both elements */
+    justify-content: space-between;
+    gap: 20px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+
+/* WHY VISIT TEXT */
+.why-visit {
+    width: 55%;
+    margin: 0;
+    padding: 0;
+}
+
+.why-visit h2 {
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.why-visit ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.why-visit ul li {
+    background: #008080;
+    color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* WHY VISIT IMAGE */
+.why-visit-image {
+    width: 40%;
+    display: flex;
+    align-items: flex-start; /* Ensures image starts at the top */
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    max-height: 350px;
+}
+
+.why-visit-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* FUN FACT SECTION */
+.fun-fact {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+/* GALLERY GRID */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery figure {
+    text-align: center;
+    max-width: 100%;
+}
+
+.gallery figcaption {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* BONUS PAGE STYLING */
+.bonus-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.bonus-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.bonus-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bonus-item:hover {
+    transform: scale(1.05);
+}
+
+.bonus-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* MAP SECTION */
+.map-section {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.map-section h2 {
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+.map-section p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* FLEXIBLE SECTIONS */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item-half {
+    width: 50%;
+    padding: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .why-visit, .why-visit-image {
+        width: 100%;
+    }
+
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex-item-half {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 40px;
+        font-size: 1.2rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+}
