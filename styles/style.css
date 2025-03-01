@@ -40,49 +40,25 @@ h1 {
     justify-content: center;
     text-align: center;
     color: white;
-    background: url('../images/hero-1200.jpg') center/cover no-repeat;
+    background: var(--hero-bg) center/cover no-repeat;
 }
 
-.hero-todo {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background: url('../images/mountains-1200.jpg') center/cover no-repeat;
+.hero-index {
+    --hero-bg: url('../images/hero-1200.jpg');
 }
 
 .hero-gallery {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background: url('../images/belize-1200.jpg') center/cover no-repeat;
+    --hero-bg: url('../images/belize-1200.jpg');
+}
+
+.hero-todo {
+    --hero-bg: url('../images/mountains-1200.jpg');
 }
 
 .hero-bonus {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background: url('../images/sunset-1200.jpg') center/cover no-repeat;
+    --hero-bg: url('../images/sunset-1200.jpg');
 }
 
-/* HERO TEXT - Ensuring It Stays Centered */
 .hero h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -356,23 +332,6 @@ footer {
     animation: floatTitle 3s ease-in-out infinite;
 }
 
-@media (max-width: 1200px) {
-    .hero {
-        background-image: url('../images/hero-1200.jpg');
-    }
-    .hero-todo {
-        background: url('../images/mountains-1200.jpg');
-    }
-    
-    .hero-gallery {
-        background: url('../images/belize-1200.jpg');
-    }
-    
-    .hero-bonus {
-        background: url('../images/sunset-1200.jpg');
-    }
-}
-
 @media (max-width: 1024px) {
     p {
         size: 2vh;
@@ -392,21 +351,10 @@ footer {
         width: 100%;
         max-width: 90%;
     }
-
-    .hero {
-        background-image: url('../images/hero-800.jpg');
-    }
-    .hero-todo {
-        background: url('../images/mountains-800.jpg');
-    }
-    
-    .hero-gallery {
-        background: url('../images/belize-800.jpg');
-    }
-    
-    .hero-bonus {
-        background: url('../images/sunset-800.jpg');
-    }
+    .hero-index { --hero-bg: url('../images/hero-800.jpg'); }
+    .hero-gallery { --hero-bg: url('../images/belize-800.jpg'); }
+    .hero-todo { --hero-bg: url('../images/mountains-800.jpg'); }
+    .hero-bonus { --hero-bg: url('../images/sunset-800.jpg'); }
 }
 
 @media (max-width: 768px) {
@@ -429,20 +377,14 @@ footer {
     }
 
     .hero {
-        background-image: url('../images/hero-400.jpg');
         height: 40vh;
+        padding: 40px;
+        font-size: 1.2rem;
     }
-    .hero-todo {
-        background: url('../images/mountains-400.jpg');
-    }
-    
-    .hero-gallery {
-        background: url('../images/belize-400.jpg');
-    }
-    
-    .hero-bonus {
-        background: url('../images/sunset-400.jpg');
-    }
+    .hero-index { --hero-bg: url('../images/hero-400.jpg'); }
+    .hero-gallery { --hero-bg: url('../images/belize-400.jpg'); }
+    .hero-todo { --hero-bg: url('../images/mountains-400.jpg'); }
+    .hero-bonus { --hero-bg: url('../images/sunset-400.jpg'); }
     .hero h1 {
         font-size: 2.5rem;
     }
