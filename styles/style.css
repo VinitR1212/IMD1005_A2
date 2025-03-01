@@ -40,6 +40,19 @@ h1 {
     justify-content: center;
     text-align: center;
     color: white;
+    background: url('../images/hero-1200.jpg') center/cover no-repeat;
+}
+
+.hero-todo {
+    background: url('../images/mountains-1200.jpg') center/cover no-repeat;
+}
+
+.hero-gallery {
+    background: url('../images/belize-1200.jpg') center/cover no-repeat;
+}
+
+.hero-bonus {
+    background: url('../images/sunset-1200.jpg') center/cover no-repeat;
 }
 
 /* HERO TEXT - Ensuring It Stays Centered */
@@ -309,6 +322,22 @@ footer {
     animation: floatTitle 3s ease-in-out infinite;
 }
 
+@media (max-width: 1200px) {
+    .hero {
+        background-image: url('../images/hero-1200.jpg');
+    }
+    .hero-todo {
+        background: url('../images/mountains-1200.jpg');
+    }
+    
+    .hero-gallery {
+        background: url('../images/belize-1200.jpg');
+    }
+    
+    .hero-bonus {
+        background: url('../images/sunset-1200.jpg');
+    }
+}
 
 @media (max-width: 1024px) {
     p {
@@ -333,6 +362,17 @@ footer {
     .hero {
         background-image: url('../images/hero-800.jpg');
     }
+    .hero-todo {
+        background: url('../images/mountains-800.jpg');
+    }
+    
+    .hero-gallery {
+        background: url('../images/belize-800.jpg');
+    }
+    
+    .hero-bonus {
+        background: url('../images/sunset-800.jpg');
+    }
 }
 
 @media (max-width: 768px) {
@@ -356,9 +396,19 @@ footer {
 
     .hero {
         background-image: url('../images/hero-400.jpg');
-        height: 40vh; /* Reduce height for smaller screens */
+        height: 40vh;
     }
-
+    .hero-todo {
+        background: url('../images/mountains-400.jpg');
+    }
+    
+    .hero-gallery {
+        background: url('../images/belize-400.jpg');
+    }
+    
+    .hero-bonus {
+        background: url('../images/sunset-400.jpg');
+    }
     .hero h1 {
         font-size: 2.5rem;
     }
